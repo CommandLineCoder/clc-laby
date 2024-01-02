@@ -1,0 +1,30 @@
+Linux or Unix-like:
+
+  To compile laby, you need ocaml >= 4.10.0, lablgtk3 >= 3.1.0 and
+  lablgtk3-sourceview3 >= 3.1.0).
+
+  Execute the following commands in the archive's main directory:
+
+    make
+    ln -s ${PWD}/data ${HOME}/.config/laby
+
+  If you want the program to produce some kind of absurd sounds, make
+  sure the alsa "aplay" command is present on your system.
+
+  Now to run laby type:
+
+    ./laby
+
+
+Windows:
+
+  The best advice is to use pre-compiled binaries available on the web:
+    http://cl-informatik.uibk.ac.at/users/sgimenez/data/fdls/windows/
+  Those binaries are cross-compiled using mingw-ocaml.
+  If you plan to compile them by yourself on windows, you will
+  probably need patience and a lot of good luck and the following
+  software:
+
+    - ocaml: http://caml.inria.fr/download.en.html
+    - lablgtk: http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html
+    - gtksourceview: http://projects.gnome.org/gtksourceview/download.html

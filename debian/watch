@@ -1,0 +1,2 @@
+version=2
+https://github.com/sgimenez/laby/tags .*/laby-?(\d\S*)\.tar\.gz
