@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE=1
+
+include /usr/share/ocaml/ocamlvars.mk
+include /usr/share/ocaml/ocamlinit.mk
+
+OCAML_BEST = $(if $(OCAML_OPT_ARCH),native,byte)
+
+override_dh_auto_build:
+	$(MAKE) $(OCAML_BEST)
+
+override_dh_auto_install:
+	cp $(shell readlink -f laby) $(CURDIR)/debian/laby/usr/games/laby
+	cp -r data/* $(CURDIR)/debian/laby/usr/share/laby/
+	find $(CURDIR)/debian/laby/usr/share/laby/mods/ -type f -name defs -print0 2>/dev/null | xargs -0r chmod a+x
+	cp data/tiles/ant-e.svg $(CURDIR)/debian/laby/usr/share/icons/hicolor/scalable/apps/laby.svg
+	cp debian/laby.xpm $(CURDIR)/debian/laby/usr/share/pixmaps/
+	cp packaging/laby.desktop $(CURDIR)/debian/laby/usr/share/applications/
+
+%:
+	dh $@ --with ocaml
+
+laby.6: laby.xml
+# Verification
+	-xmllint --nonet --noout --postvalid --xinclude $^
+# Compilation
+	xsltproc --output $@ --nonet --xinclude \
+	  /usr/share/xml/docbook/stylesheet/nwalsh/manpages/docbook.xsl \
+	  $^
+
+.PHONY: laby.6
