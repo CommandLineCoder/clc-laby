@@ -1,7 +1,14 @@
 public class laby_name_Ant extends Robot {
 
+// Double forward slash is a single line comment
+
+/* Slash star is the start of a comment that may be more than one line.
+   Star slash ends the comment */
+   
+   
   public void laby_name_ant()
   {
+    laby_name_say("Lets get out of here!");
     laby_name_right();
     laby_name_forward();
     laby_name_take();
@@ -17,4 +24,70 @@ public class laby_name_Ant extends Robot {
     laby_name_escape();
   }
 
+  void walkForwardFiveSteps(){
+    laby_name_forward();
+    laby_name_forward();
+    laby_name_forward();
+    laby_name_forward();
+    laby_name_forward();
+  }
+
+  void sampleLookForThings(){
+
+    if (look() == Web) {
+     // ...
+    }
+    else if(look() == Void) {
+    //  ...
+    }
+    else if(look() == Rock) {
+    //  ...
+    }
+    else if(look() == Web) {
+    //  ...
+    }
+    else if(look() == Wall) {
+    //  ...
+    }
+    else if(look() == Exit) {
+    //  ...
+    }
+    else {
+    //  ...
+    }
+
+
+
+  }
+
+
+/* This is code for a sample function
+
+void sampleFunction(){
+
+  // declaring a variable. int is short for integer. 
+  int counter; 
+
+  // assigning a variable
+  counter = 0;
+  
+  while (counter < 5){
+   // Call a function or something
+
+
+   counter = counter + 1;
+   // "counter = counter + 1;" can be shortened to "counter++;" 
+  } 
+
+  // a for loop is in the format
+  //  for (initialisation; check; code to execute after each loop){ code to run on loop;}
+  //
+  // This is an example 
+  //  for (int i = 0; i < 10; i++){
+  //    // walk forward
+  //  }
+
+
+}
+*/
 }
