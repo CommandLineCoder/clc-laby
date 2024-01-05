@@ -69,7 +69,7 @@ void sampleFunction(){
   int counter; 
 
   // assigning a variable
-  count = 0;
+  counter = 0;
   
   while (counter < 5){
    // Call a function or something
