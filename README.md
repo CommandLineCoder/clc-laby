@@ -8,7 +8,7 @@ clc-laby installation instructions
 
 
 sudo nano /etc/apt/sources.list
-<Remove the # from the start of the deb-src lines, save and exit>
+<Remove the # from the start of the deb-src lines, (Press Control X) to save and exit>
 
 sudo apt update
 
