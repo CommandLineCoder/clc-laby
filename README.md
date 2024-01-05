@@ -23,10 +23,12 @@ cd clc-laby
 
 chmod 755 build
 
-make
+debuild -us -uc -b
 
-sudo apt install laby
+cd ..
+
+sudo dpkg -i ./clc-laby<version>.deb
 
 sudo apt install default-jdk
 
-./laby
+laby
