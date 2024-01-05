@@ -6,12 +6,14 @@ At the time of writing, these are provisional and will be updated soon.
 
 clc-laby installation instructions
 
-sudo apt upgrade
 
 sudo nano /etc/apt/sources.list
 <Remove the # from the start of the deb-src lines, save and exit>
 
 sudo apt update
+
+sudo apt upgrade
+
 
 sudo apt build-dep laby
 
