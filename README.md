@@ -15,6 +15,8 @@ sudo apt update
 
 sudo apt build-dep laby
 
+sudo apt install devscripts
+
 git clone https://github.com/CommandLineCoder/clc-laby.git
 
 cd clc-laby
