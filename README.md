@@ -29,7 +29,7 @@ debuild -us -uc -b
 
 cd ..
 
-sudo dpkg -i ./clc-laby<version>.deb
+sudo dpkg -i ./laby<version>.deb
 
 sudo apt install default-jdk
 
