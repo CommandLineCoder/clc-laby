@@ -1,5 +1,7 @@
 clc-laby is a fork of the game laby, a game where a player learns programming by moving an ant using instructions.
 
+The fork is targeted as people looking to learn java and running a Raspberry Pi. 
+
 #Version History
 12thJan2024 - Version 1.0 released with changes to java skeleton to make more features visible to the player
 
