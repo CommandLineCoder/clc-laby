@@ -1,6 +1,6 @@
 Linux or Unix-like:
 
-  To compile laby, you need ocaml >= 4.10.0, lablgtk3 >= 3.1.0 and
+  To compile clc-laby, you need ocaml >= 4.10.0, lablgtk3 >= 3.1.0 and
   lablgtk3-sourceview3 >= 3.1.0).
 
   Execute the following commands in the archive's main directory:
@@ -11,12 +11,15 @@ Linux or Unix-like:
   If you want the program to produce some kind of absurd sounds, make
   sure the alsa "aplay" command is present on your system.
 
-  Now to run laby type:
+  Now to run clc-laby type:
 
-    ./laby
+    ./clc-laby
 
 
 Windows:
+  clc-laby doesnt officially support windows. the text below remains from
+  when this project was forked from laby. 
+
 
   The best advice is to use pre-compiled binaries available on the web:
     http://cl-informatik.uibk.ac.at/users/sgimenez/data/fdls/windows/
