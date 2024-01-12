@@ -192,7 +192,7 @@ let label_txt text packing =
 
 let label_menu = F.x "Menu" []
 let label_level = F.x "Level" []
-let label_welcome = F.x "Welcome to clc-laby, a programming game." []
+let label_welcome = F.x "Welcome to clc-laby v1.0 (12thJan2024), a programming game." []
 let label_language = F.x "Language:" []
 let label_prog = F.x "Program:" []
 let label_mesg = F.x "Messages:" []
